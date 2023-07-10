@@ -6,22 +6,37 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --swiper-theme-color: #6893B8 !important;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #F8F8F8;
+  color: #FFACC0;
+  text-shadow:
+    -1px 1px 2px #000,
+    1px -1px 2px #000,
+    -1px 1px 2px #000,
+    1px 1px 2px #000;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.text-shadow {
+  text-shadow:
+    -1px 1px 1px #000,
+    1px -1px 1px #000,
+    -1px -1px 1px #000,
+    1px 1px 1px #000;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.swiper-pagination {
+  bottom: 1em !important;
 }
