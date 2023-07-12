@@ -25,7 +25,7 @@ const AboutMe = () => {
           />
         </div>
         <aside className="w-16 h-16 justify-center text-center absolute top-1/4 left-[78%] z-0 animate-[bounce_1.5s_ease-in-out_infinite] lg:hidden">
-          <Link href="/cv" className="flex flex-col items-center">
+          <Link href={"marianella_tovar.pdf"} target="_blank" className="flex flex-col items-center" download>
             <TbFileDownload size={34} color="#fc83a0" />
             <span className="text-sm text-text-secondary">
               Descarga mi Cv{" "}
@@ -38,7 +38,7 @@ const AboutMe = () => {
           </Link>
         </aside>
         <button className="hidden text-shadow bg-secondary p-2 rounded-lg border-2 border-text justify-center text-center z-0 hover:bg-text hover:border-text-secondary duration-300 lg:block">
-          <Link href="/cv" className="flex gap-2 items-center">
+          <Link href={"marianella_tovar.pdf"} target="_blank" className="flex gap-2 items-center" download>
             <TbFileDownload size={34} color="#fc83a0" />
             <span className="text-sm text-text-secondary uppercase">
               Descarga mi Cv{" "}

@@ -49,7 +49,7 @@ export default function ContactModal() {
                     className="text-2xl uppercase md:text-3xl font-medium"
                   >
                     ¿Quieres ponerte en contacto conmigo? <br />
-                    Te lo tengo!
+                    <br />
                   </Dialog.Title>
                   <div className="mt-2 text-lg">
                     <ul className="text-center px-8">

@@ -20,5 +20,8 @@
     "react-icons": "^4.10.1",
     "swiper": "^10.0.4",
     "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }
