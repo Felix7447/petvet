@@ -1,6 +1,6 @@
 import React from "react";
 
-const CarouselCard = ({ children, title, image }) => {
+const CarouselCard = ({ children, title, image, price }) => {
   return (
     <div
       id="card"
@@ -9,7 +9,13 @@ const CarouselCard = ({ children, title, image }) => {
     >
       <div className="relative h-full">
         <div className="absolute bottom-8">
-          <h3 className="uppercase text-xl lg:text-2xl">{title}</h3>
+          {price ? (
+            <h3 className="uppercase text-xl lg:text-2xl">
+              {title}: <span className="text-secondary">{price}$</span>
+            </h3>
+          ) : (
+            <h3 className="uppercase text-xl lg:text-2xl">{title}</h3>
+          )}
           <p className="text-left text-md text-text-secondary lg:text-xl h-32 my-4 lg:opacity-0 lg:group-hover:opacity-100 duration-500">
             {children}
           </p>

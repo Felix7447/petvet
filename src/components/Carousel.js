@@ -56,11 +56,15 @@ const Carousel = () => {
           ES IMPORTANTE MANTENER A TU PELUDO AL DÍA CON SUS VACUNAS Y
           DESPARATARLOS CADA 3 MESES
         </CarouselCard>
-        <CarouselCard title="Hematología + Química" image={hematologiaImg.src}>
+        <CarouselCard
+          title="Hematología + Química"
+          image={hematologiaImg.src}
+          price={30}
+        >
           HEMATOLOGÍA COMPLETA, PLAQUETAS + DIAGNÓSTICO DE HEMOPARÁSITOS. PERFIL
           RENAL Y HEPÁTICO.
         </CarouselCard>
-        <CarouselCard title="ECOGRAFÍA" image={ecografiaImg.src}>
+        <CarouselCard title="ECOGRAFÍA" image={ecografiaImg.src} price={20}>
           VISUALIZACÍON DE TUMORES, OBSTRUCCIONES, UROLITOS, LÍQUIDO LIBRE,
           ANOMALÍAS EN LOS TEJIDOS, INFECCIONES, ENTRE OTROS.
         </CarouselCard>
