@@ -35,9 +35,9 @@ const Patient = ({
         </div>
       </div>
       <div className="my-4 lg:text-xl lg:my-8">
-        <p className="text-text-secondary">{info}</p>
+        <p className="text-text-secondary text-thin-shadow">{info}</p>
         <h3 className="text-2xl text-secondary mt-2">Recuperación:</h3>
-        <p className="text-text-secondary">{recuperacion}</p>
+        <p className="text-text-secondary text-thin-shadow">{recuperacion}</p>
       </div>
     </div>
   );

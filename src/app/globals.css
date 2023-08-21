@@ -28,6 +28,14 @@ body {
     1px 1px 1px #000;
 }
 
+.text-thin-shadow {
+  text-shadow:
+    -1px 1px 1px #000,
+    0px -1px 1px #000,
+    1px 0px 1px #000,
+    0px 1px 1px #000
+}
+
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }

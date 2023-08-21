@@ -8,7 +8,7 @@ const NavBar = () => {
         <a href="/" className="absolute left-6 top-2">
           <Logo size={80} />
         </a>
-        <ul className="h-full flex justify-center items-center gap-7 text-3xl text-text uppercase">
+        <ul className="h-full flex justify-center items-center gap-4 text-2xl text-text uppercase">
           <li className="hover:text-text-secondary hover:scale-95 duration-300">
             <a href="/#sobremi">Sobre Mí</a>
           </li>

@@ -6,12 +6,7 @@ const ScrollUpButton = () => {
   const scrollButton = useRef(null);
 
   const scrollUp = () => {
-    let currentScroll = document.documentElement.scrollTop;
-
-    if (currentScroll > 0) {
-      window.requestAnimationFrame(scrollUp);
-      window.scrollTo(0, currentScroll - currentScroll / 8);
-    }
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {

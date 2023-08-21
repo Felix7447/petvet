@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={primaryFont.className}>
+    <html lang="es" className={`${primaryFont.className} !scroll-smooth`}>
       <head>
         <link rel="icon" href={favicon.src} sizes="any" />
       </head>

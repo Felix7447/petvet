@@ -23,8 +23,12 @@ const Carousel = () => {
     const position = carousel.current.scrollLeft;
     carousel.current.scrollTo(position + 600, 0);
   };
+
   return (
-    <div id="carouselContainer" className="w-full flex items-center">
+    <div
+      id="carouselContainer"
+      className="w-full max-w-7xl mx-auto flex items-center"
+    >
       <button
         ref={prevButton}
         onClick={handlePrev}

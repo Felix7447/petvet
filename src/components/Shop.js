@@ -2,16 +2,19 @@ import React from "react";
 import Link from "next/link";
 import { TbExternalLink } from "react-icons/tb";
 import Image from "next/image";
-import Logo from "./Logo";
-// import Map from "./Map";
 
-const Shop = ({ children, schedule, title, subtitle, link, logo, center }) => {
+const Shop = ({ children, schedule, title, subtitle, link, logo }) => {
   return (
     <div className="bg-primary my-4 px-2 py-8 lg:p-6 ring-2 ring-text rounded-xl lg:px-24">
       <h1 className="text-2xl text-center mt-2">{schedule}</h1>
-      <div className="w-full flex flex-col gap-4 items-center lg:flex-row lg:justify-center  mb-4 lg:mb-0">
+      <div className="text-thin-shadow w-full flex flex-col gap-4 items-center lg:flex-row lg:justify-center  mb-4 lg:mb-0">
         <aside className="relative w-48 h-48 lg:w-72 lg:h-72 my-4 rounded-full border-2 border-text flex justify-center items-center shadow-none">
-          <Image src={logo} fill={true} className="rounded-full scale-95" />
+          <Image
+            src={logo}
+            fill={true}
+            alt="logo-image"
+            className="rounded-full scale-95"
+          />
         </aside>
         <aside className="w-full lg:w-1/2 text-center lg:text-left px-4">
           <h1 className="text-2xl mt-2">EN {title}</h1>

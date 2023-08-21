@@ -1,15 +1,14 @@
-"use client";
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { TbDog, TbCat, TbFileDownload, TbExternalLink } from "react-icons/tb";
+import { TbDog, TbCat } from "react-icons/tb";
 import profile from "@/assets/images/marianella-tovar.png";
+import DownloadButton from "./DownloadButton";
 
 const AboutMe = () => {
   return (
     <section
       id="sobremi"
-      className="col-span-12 bg-primary h-auto p-5 ring-2 ring-text rounded-xl w-full grid grid-cols-12"
+      className="col-span-12 max-w-6xl mx-auto mb-4 bg-primary h-auto p-5 ring-2 ring-text rounded-xl w-full grid grid-cols-12"
     >
       <h1 className="text-2xl lg:text-5xl col-span-12 text-center lg:my-4">
         SOBRE Mí
@@ -24,34 +23,9 @@ const AboutMe = () => {
             alt="Marianella Tovar"
           />
         </div>
-        <aside className="w-16 h-16 justify-center text-center absolute top-1/4 left-[78%] z-0 animate-[bounce_1.5s_ease-in-out_infinite] lg:hidden">
-          <Link href={"marianella_tovar.pdf"} target="_blank" className="flex flex-col items-center" download>
-            <TbFileDownload size={34} color="#fc83a0" />
-            <span className="text-sm text-text-secondary">
-              Descarga mi Cv{" "}
-              <TbExternalLink
-                className="inline bg-red-200 rounded-full"
-                color="#fc83a0"
-                size={18}
-              />
-            </span>
-          </Link>
-        </aside>
-        <button className="hidden text-shadow bg-secondary p-2 rounded-lg border-2 border-text justify-center text-center z-0 hover:bg-text hover:border-text-secondary duration-300 lg:block">
-          <Link href={"marianella_tovar.pdf"} target="_blank" className="flex gap-2 items-center" download>
-            <TbFileDownload size={34} color="#fc83a0" />
-            <span className="text-sm text-text-secondary uppercase">
-              Descarga mi Cv{" "}
-              <TbExternalLink
-                className="inline bg-red-200 rounded-full"
-                color="#fc83a0"
-                size={18}
-              />
-            </span>
-          </Link>
-        </button>
+        <DownloadButton />
       </div>
-      <p className="text-text-secondary uppercase col-span-12 flex items-center lg:col-start-5 lg:col-end-12 p-2 lg:text-2xl lg:my-8">
+      <p className="text-text-secondary text-thin-shadow uppercase col-span-12 flex items-center lg:col-start-5 lg:col-end-12 p-2 lg:text-2xl lg:my-8">
         Mi nombre es Marianella Tovar, soy Médico Veterinario egresada del
         Núcleo Juan José Mora de la UNEFM. INICIÉ MI CARRERA TENIENDO COMO META
         EL AYUDAR A LOS ANIMALES DESDE LA COMPASIÓN, EMPATÍA Y RESPONSABILIDAD.
@@ -60,9 +34,9 @@ const AboutMe = () => {
         MASCOTA NECESITA ALGUNO DE MIS SERVICIOS ¡NO DUDES EN CONTACTARME!
       </p>
       <div className="col-span-12 justify-self-center py-4">
-        <h1 className="text-xl mb-2 text-center">Especies</h1>
-        <div className="flex gap-3">
-          <icon className="flex items-center gap-1 text-text-secondary">
+        <h1 className="text-xl mb-2 text-center lg:text-3xl">Especies</h1>
+        <div className="flex gap-3 text-thin-shadow lg:text-xl">
+          <icon className="flex items-center gap-1 text-text-secondary lg:gap-2">
             <TbDog
               size={34}
               color="#fc83a0"
@@ -70,7 +44,7 @@ const AboutMe = () => {
             />
             CANINOS
           </icon>
-          <icon className="flex items-center gap-1 text-text-secondary">
+          <icon className="flex items-center gap-1 text-text-secondary lg:gap-2">
             <TbCat
               size={34}
               color="#fc83a0"

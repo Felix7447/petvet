@@ -25,7 +25,7 @@ module.exports = {
       },
       keyframes: {
         bounce: {
-          "0%, 100%": { transform: "translateY(-15%)" },
+          "0%, 100%": { transform: "scale(1.05)" },
         },
       },
     },
