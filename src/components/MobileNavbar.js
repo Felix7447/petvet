@@ -9,7 +9,7 @@ const MobileNavbar = () => {
     <header className="w-full h-20 bg-primary flex justify-between items-center px-4 lg:hidden border-b-2 border-text">
       <Link href={"/"} className="relative text-2xl">
         <Logo />
-        <h1 className="inline text-2xl shadow-none">PETVET</h1>
+        <h1 className="inline text-3xl shadow-none">PETVET</h1>
       </Link>
       <BurgerMenu />
     </header>
