@@ -18,7 +18,7 @@ import alex from "@/assets/images/alex.png";
 const Slider = () => {
   return (
     <Swiper
-      className="w-full lg:w-1/2 flex items-center mySwiper text-text cursor-grab"
+      className="w-full flex items-center mySwiper text-text cursor-grab sm:w-3/4 md:w-1/2"
       pagination={true}
       modules={[Pagination]}
       autoplay={true}

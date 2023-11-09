@@ -12,8 +12,8 @@ const Patient = ({
   recuperacion = "Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet",
 }) => {
   return (
-    <div className="bg-primary min-h-[30rem] lg:min-h-[28rem] ring-2 ring-text rounded-xl py-8 px-4 m-2 lg:h-[36rem] lg:py-12 lg:px-12">
-      <div className="flex lg:justify-around lg:items-center">
+    <section className="bg-primary min-h-[30rem] lg:min-h-[28rem] ring-2 ring-text rounded-xl py-8 px-4 m-2 lg:h-[36rem] lg:py-12 lg:px-12">
+      <header className="flex justify-center items-center md:items-center lg:gap-8">
         <div className="relative w-24 h-24 ring-2 ring-text rounded-full mr-4 lg:w-48 lg:h-48">
           <Image
             src={img}
@@ -22,7 +22,7 @@ const Patient = ({
             className="rounded-full scale-95"
           />
         </div>
-        <div className="w-1/2 flex flex-col items-center">
+        <aside className="flex flex-col items-center">
           <h3 className="text-2xl text-center text-secondary lg:w-full lg:text-3xl lg:text-left">
             {nombre}
           </h3>
@@ -32,14 +32,14 @@ const Patient = ({
             {raza && <li>raza: {raza}</li>}
             {edad && <li>edad: {edad}</li>}
           </ul>
-        </div>
-      </div>
-      <div className="my-4 lg:text-xl lg:my-8">
+        </aside>
+      </header>
+      <main className="my-4 lg:text-xl lg:my-8">
         <p className="text-text-secondary text-thin-shadow">{info}</p>
         <h3 className="text-2xl text-secondary mt-2">Recuperación:</h3>
         <p className="text-text-secondary text-thin-shadow">{recuperacion}</p>
-      </div>
-    </div>
+      </main>
+    </section>
   );
 };
 
