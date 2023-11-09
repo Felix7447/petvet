@@ -19,12 +19,12 @@ const Schedule = () => {
   return (
     <section
       id="horarios"
-      className="col-span-12 w-full place-items-center my-8 lg:my-16 "
+      className="col-span-12 p-8 w-full place-items-center my-8 lg:my-16 "
     >
-      <h1 className="text-2xl lg:text-5xl text-center mt-2 lg:mb-8">
+      <h2 className="text-2xl lg:text-5xl text-center my-8">
         HORARIOS DE ATENCIÓN
-      </h1>
-      <div className="w-full max-w-6xl mx-auto flex flex-col">
+      </h2>
+      <main className="relative w-full max-w-6xl flex flex-col items-center lg:flex-row lg:items-start lg:justify-center lg:gap-8 lg:max-w-none">
         <Shop
           schedule="LUNES A MIÉRCOLES:"
           title="BIOANIMAL"
@@ -40,10 +40,9 @@ const Schedule = () => {
           link={Links.shalompets}
           logo={shalom_logo}
         >
-          DE 8:30AM A 5:00PM (JUEVES Y VIERNES) <br />
-          DE 8:30AM A 4:00PM (SÁBADOS)
+          JUEVES A SÁBADO DE 8:30AM A 5:00PM
         </Shop>
-      </div>
+      </main>
     </section>
   );
 };
