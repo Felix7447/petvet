@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
       </section>
       <h1 className="w-full text-center text-sm uppercase bg-background text-text-secondary py-2">
-        <Link href={"https://felix-web-dev.vercel.app/"} target="_blank">
+        <Link href={"https://felixreynadev.vercel.app/"} target="_blank">
           Web creada por Ing. Felix Reyna
         </Link>
       </h1>
